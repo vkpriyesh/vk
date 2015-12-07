@@ -87,16 +87,21 @@ print
 		<!-- EndFavIcons -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
-		<!-- BEGIN PRIVY WIDGET CODE -->
-			<script type='text/javascript'>
-			var _d_site = _d_site || 'CA4C4A2497062123A512675E';
-			(function(w, d, p, s, s2) { 
-			  w[p] = w[p] || function() { (w[p].q = w[p].q || []).push(arguments) }
-			  s = d.createElement('script'); s.async = 1; s.src = '//widget.privy.com/assets/widget.js'; 
-			  s2 = d.getElementsByTagName('script')[0]; s2.parentNode.insertBefore(s, s2); 
-			})(window, document, 'Privy');
-			</script>
-		<!-- END PRIVY WIDGET CODE -->
+		<!--WishPond Script-->
+		<script type="text/javascript">
+		(function(d, s, id) {
+		  window.Wishpond = window.Wishpond || {};
+		  Wishpond.merchantId = '969746';
+		  Wishpond.writeKey = '9b54739b2829';
+		  var js, wpjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//cdn.wishpond.net/connect.js";
+		  wpjs.parentNode.insertBefore(js, wpjs);
+		}(document, 'script', 'wishpond-connect'));
+		</script>
+		<!--End WishPond Script-->
+		
 	</head>
 	<body class="is-loading">
 
